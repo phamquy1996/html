@@ -3,6 +3,11 @@ ul li{
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Roboto';font-size: 22px;
+}
+
 ul{
     margin: 0;
     padding: 0;
@@ -67,7 +72,11 @@ a{
     font-weight: bold;
     text-transform: uppercase;
 }
-
+.box-1 .b2, .box-2 .b2, .box-3 .b2, .box-4 .b2, .box-5{
+    font-size: 14px;
+    /* font-weight: bold; */
+    /* text-transform: uppercase; */
+}
 
 .box-4{
     width: 281px;
