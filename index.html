@@ -5,9 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="menu.css" />
-        <link rel="stylesheet" href="footer.css" />
-        <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="home.css" />
+    <!-- <link rel="stylesheet" href="about.css" /> -->
+    <link rel="stylesheet" href="grow.css" />
+    <link rel="stylesheet" href="member.css" />
+        <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
         <title>Document</title>
     </head>
     <body>
@@ -17,17 +22,17 @@
                     <div class="menu-chil">
                         <ul>
                             <li>
-                                <a href="#">Về chúng tôi</a>
+                                <a href="about-us.html">Về chúng tôi</a>
                             </li>
                             <li>
-                                <a href="#">Hội viên</a>
+                                <a href="member.html">Hội viên</a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="index.html">
                                     <img src="CACBON_logo.png" alt="" />
                                 </a>
                             </li>
-                            <li>
+                            <li class="dn">
                                 <a href="#">Đăng nhập</a>
                             </li>
                             <li class="dk">
@@ -169,6 +174,96 @@
                     </div>
                 </div>
             </content>
+            <div class="popup-auth">
+                <div class="auth">
+                    <section id="form">
+                        <div id="toggle-forms">
+                            <button class="waves-effect waves-light active" id="login">Login</button>
+                            <button class="waves-effect waves-light" id="register">Register</button>
+                        </div>
+                        <form class="col s12">
+                            <div class="container">
+                                <h1>Login your account</h1>
+                                <div class="row">
+                                    <div class="col-lg12">
+                                        <div class="form container">
+                                            <div class="inner-container">
+                                                <form action="">
+                                                    <div class="input-containe">
+                                                        <input type="text" required="" class="input-place" placeholder="">
+                                                        <label class="label">Name</label>
+                                                    </div>
+                                                    <div class="input-containe">
+                                                        <input type="password" required="" class="input-place" placeholder="">
+                                                        <label class="label">Password</label>
+                                                    </div>
+                                                    <div class="input-containe">
+                                                        <div class="check-policy-login">
+                                                            <!-- <input type="checkbox"> -->
+                                                            <span>
+                                                                <a href=""> Forgot Password? </a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-containe">
+                                                        <input type="submit" value="Tạo Tài khoản">
+                                                    </div>
+                                                    <div class="or">
+                                                        or
+                                                    </div>
+                                                    <div class="input-containe">
+                                                        <button><img src="gg.png" alt=""> Sign in with Google</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <form class="col s12">
+                            <div class="container">
+                                <h1>Create your account</h1>
+                                <div class="row">
+                                    <div class="col-lg12">
+                                        <div class="form container">
+                                            <div class="inner-container">
+                                                <form action="">
+                                                    <div class="input-containe">
+                                                        <input type="text" required="" class="input-place" placeholder="">
+                                                        <label class="label">Email</label>
+                                                    </div>
+                                                    <div class="input-containe">
+                                                        <input type="password" required="" class="input-place" placeholder="">
+                                                        <label class="label">Password</label>
+                                                    </div>
+                                                    <div class="input-containe">
+                                                        <div class="check-policy">
+                                                            <input type="checkbox">
+                                                            <span>
+                                                                I agree to the Cacbon <a href="">Terms of Service.</a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="input-containe">
+                                                        <input type="submit" value="Đăng ký">
+                                                    </div>
+                                                    <div class="or">
+                                                        or
+                                                    </div>
+                                                    <div class="input-containe">
+                                                        <button><img src="gg.png" alt=""> Login in with Google</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
             <footer>
                 <div class="footer-main">
                     <div class="footer-chil">
@@ -348,3 +443,36 @@
 <style>
 
 </style>
+<script>
+    let $id = (id) => document.getElementById(id);
+    var [login, register, form] = ['login', 'register', 'form'].map(id => $id(id));
+
+    [login, register].map(element => {
+        element.onclick = function () {
+            [login, register].map($ele => {
+                $ele.classList.remove("active");
+            });
+            this.classList.add("active");
+            this.getAttribute("id") === "register" ? form.classList.add("active") : form.classList.remove(
+                "active");
+        }
+    });
+    $(document).ready(function () {
+        $('.popup-auth').click(function (e) {
+            e.stopPropagation()
+            $('.popup-auth').hide()
+        });
+        $('#form').click(function (e) {
+            e.stopPropagation()
+            // alert(2)
+        });
+        $('.dk').click(function (e) {
+            $('.popup-auth').show()
+            // alert(2)
+        });
+        $('.dn').click(function (e) {
+            $('.popup-auth').show()
+            // alert(2)
+        });
+    })
+</script>
