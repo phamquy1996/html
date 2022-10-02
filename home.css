@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.menu-main-cb {
+    background-image: url("2222.png"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    width: 100%;
+    padding-top: 5%;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+}
+.sub-menu {
+    padding-top: 500px;
+    position: relative;
+    text-align: center;
+}
+.main {
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 50%;
+    top: 300px;
+}
+.line-1 {
+    width: 400px;
+    border-top: 1px solid white;
+    transform: rotate(37deg);
+    position: absolute;
+    right: 50%;
+    top: 270px;
+}
+.line-2 {
+    width: 350px;
+    border-top: 1px solid white;
+    transform: rotate(37deg);
+    position: absolute;
+    right: 34%;
+    top: 505px;
+}
+.line-3 {
+    width: 230px;
+    border-top: 1px solid white;
+    transform: rotate(148deg);
+    position: absolute;
+    right: 40%;
+    top: 280px;
+}
+.line-4 {
+    width: 300px;
+    border-top: 1px solid white;
+    transform: rotate(145deg);
+    position: absolute;
+    right: 52%;
+    top: 450px;
+}
+.line-5 {
+    width: 307px;
+    border-top: 1px solid white;
+    transform: rotate(11deg);
+    position: absolute;
+    right: 51%;
+    top: 598px;
+}
+.main-1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 65%;
+    top: 500px;
+}
+.main-2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 30%;
+    top: 300px;
+}
+.main-3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 66%;
+    top: 115px;
+}
+.main-4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 35%;
+    top: 580px;
+}
+.main-5 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 50%;
+    top: 100px;
+}
+.main-6 {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 75%;
+    top: 380px;
+}
+.main-7 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 50%;
+    top: 609px;
+}
+.main-8 {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    background: white;
+    position: absolute;
+    right: 39.5%;
+    top: 195px;
+}

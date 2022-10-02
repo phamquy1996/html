@@ -61,13 +61,13 @@
 .footer-right .social .fb{
     background-color: #7D7D7D;
     -webkit-mask: url('fb.svg') no-repeat center;
-    mask: url('anhquy.svg') no-repeat center;
+    mask: url('icon.svg') no-repeat center;
     width: 45px;
     height: 35px;
 }
 .footer-right .social .tw{
     background-color: #7D7D7D;
-    -webkit-mask: url('anhquy.svg') no-repeat center;
+    -webkit-mask: url('icon.svg') no-repeat center;
     width: 45px;
     height: 35px;
 }

@@ -1,0 +1,254 @@
+body {
+    background-color: #0A0E17;
+}
+
+.main {
+    font-family: Arial;
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+}
+
+h3 {
+    background: #fff;
+    color: #3498db;
+    font-size: 36px;
+    line-height: 100px;
+    margin: 10px;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+
+.action {
+    display: block;
+    margin: 100px auto;
+    width: 100%;
+    text-align: center;
+}
+
+.action a {
+    display: inline-block;
+    padding: 5px 10px;
+    background: #f30;
+    color: #fff;
+    text-decoration: none;
+}
+
+.action a:hover {
+    background: #000;
+}
+
+/* body{
+    margin-top:40px;
+  } */
+.slick-slide img {
+    width: 100% !important;
+}
+
+.main-slick-about-us {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    /* padding-top: 50px; */
+}
+
+.main-slick-about-us .wrap {
+    width: 65%;
+}
+
+p {
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+.c-action-click {
+    display: flex;
+}
+.action-click-text{
+    margin: 0px 20px;
+}
+.action-click-text a{
+    font-size: 18px;
+    font-weight: bold;
+}
+.action-click-text p{
+    color: #A0A9BE;
+    font-size: 14px;
+}
+.c-action-click{
+    margin-top: 30px;
+}
+
+.main-slick-about-us .wrap .slider-nav .img-last{
+    width: 63% !important;
+    object-fit: contain;
+    margin: auto;
+}
+.main-slick-about-us .wrap .slider-nav div img{
+    width: 100% !important;
+    object-fit: contain;
+}
+
+.intro-about{
+    width: 1200px;
+    /* margin-top: 50px; */
+    margin: 160px auto 50px;
+}
+.intro-about h2{
+   color: white;
+   text-align: center;
+   font-size: 50px;
+   line-height: 63px;
+}
+.intro-about h1{
+    color: white;
+    text-align: center;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    font-size: 80px;
+    background: linear-gradient(90deg, #2D88FF 0%, #AB4AE7 51.04%, #D14AE7 100%);
+    font-family: Work Sans;
+    font-weight: 500;
+    line-height: 98px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+.intro-cacbon{
+    display: flex;
+    font-size: 21px;
+}
+.qoute{
+    display: flex;
+
+}
+.quote-right{
+    color: white;
+    position: relative;
+    padding-left: 20px;
+}
+.quote-right::before{
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    content: " ";
+    position: absolute;
+    background: linear-gradient(#2D88FF 0%, #AB4AE7 51.04%, #D14AE7 100%);
+}
+.quote-left{
+    padding-right: 20px;
+}
+.p-brown{
+    color: #A7AAAF;
+}
+.intro-cacbon-right{
+    padding-left: 30px;
+}
+.intro-cacbon-left img{
+    padding-top: 280px;
+}
+.intro-cacbon-right h4{
+    color: white;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 80px;
+}
+.help-you{
+    color: white;
+    font-size: 30px;
+    margin: 150px 0px 30px 0px;
+    text-align: center;
+    font-weight: bold;
+}
+.member-list{
+    width: 1200px;
+    display: flex;
+    margin: auto;
+    flex-wrap: nowrap;
+    margin-bottom: 100px;
+}
+.member-list .thumnail{
+    color: white;
+    padding: 0px 20px;
+    width: 22%;
+    text-align: center;
+}
+.thumnail .member-name{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0px;
+}
+.thumnail{
+    border-right: 1px solid white ;
+}
+.thumnail .member-des{
+    color: #A7AAAF;
+}
+.member-list img{
+   width: 80px;
+   display: block;
+   margin: auto;
+}
+hr{
+    border-top: 1px solid #A7AAAF;
+    width: 67px;
+    margin: 20px auto;
+}
+.connect-with-us{
+    height: 500px;
+    background: url(/static/media/lineSection6.efe8db.png), linear-gradient(180deg, rgba(24, 25, 26, 0.1) 0%, rgba(209, 74, 231, 0.1) 100%), linear-gradient(180deg, rgba(24, 25, 26, 0.1) 0%, rgba(45, 136, 255, 0.1) 100%);
+}
+.connect-with-us-child{
+    margin: auto;
+    padding: 150px;
+    width: 1200px;
+    text-align: center;
+    color: white;
+}
+.connect-with-us button{
+    margin: auto;
+    width: 240px;
+    height: 44px;
+    padding: 10px 17px;
+    max-width: 100%;
+    margin-top: 24px;
+    border-radius: 10px;
+    background-color: #2D88FF;
+    font-size: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.connect-with-us h1{
+   margin-bottom: 20px;
+}
+.connect-with-us h2{
+    margin-bottom: 20px;
+ }
+ .partner{
+    width: 100%;
+ }
+.partner-child{
+    width: 1200px;
+    margin: 100px auto;
+    background-image: radial-gradient(circle at 100% 100%, transparent 8px, #9796D5 10px, #9796D5 11px, transparent 12px),linear-gradient(to right, #9796D5, #373674),radial-gradient(circle at 0% 100%, transparent 8px, #373674 10px, #373674 11px, transparent 12px),linear-gradient(to bottom, #373674, #9796D5),radial-gradient(circle at 0% 0%, transparent 8px, #9796D5 10px, #9796D5 11px, transparent 12px),linear-gradient(to left, #9796D5, #373674),radial-gradient(circle at 100% 0%, transparent 8px, #373674 10px, #373674 11px, transparent 12px),linear-gradient(to top, #373674, #9796D5);
+    background-position: top left, top center, top right, center right, bottom right, bottom center, bottom left, center left;
+    background-size: 11px 11px, calc(100% - (2 * 11px)) 2px, 11px 11px, 2px calc(100% - (2 * 11px));
+    background-repeat: no-repeat;
+    border: none;
+    filter: drop-shadow(0px 0px 1px rgba(0, 0, 0, 0.25));
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #A7AAAF;
+    padding: 10px 30px;
+    /* margin: 100px 0px; */
+}
+.partner-child div{
+    cursor: pointer;
+}
